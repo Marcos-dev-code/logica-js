@@ -1,0 +1,5 @@
+Dado que eu Marcos preciso fazer a seguinte operação:
+
+Valro bruto gerado anual - valor dividas anual.
+
+Para calcular o valor mensal de lucro de minha empresa, crie um programa que faça o calculo dos ganhos brutos anuais - as dispesas anuais, após este calculo divida por uma quantidade que eu possa ver mes a mes o meu lucro.

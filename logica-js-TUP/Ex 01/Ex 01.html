@@ -1,1 +1,28 @@
-ECHO est� ativado.
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex01 TUP</title>
+    <Style></Style>
+</head>
+<body>
+    <p>Cálculo da média de ganhos mensais</p>
+
+    <p>Valor bruto dos lucros obtido no período de um ano <input type="number" id="ganhoBruto"></p>
+    <p>Valor total das despesas no período do mesmo ano <input type="number" id="despesaTotal"></p>
+    <button onclick="mediaDeGanhosMensais()">Calcular</button>
+    <div id="retorno"></div>
+    
+    <script>
+        function mediaDeGanhosMensais(){
+            let ganhoBruto =document.getElementById("ganhoBruto").value;
+            let despesaTotal =document.getElementById("despesaTotal").value;
+            let valorProcessado = (parseFloat(ganhoBruto)-parseFloat(despesaTotal))/12;
+            let textoDeRetorno =document.getElementById("retorno");
+            textoDeRetorno.innerHTML="Sua empresa lucrou r$ "+valorProcessado+" por mês em média"
+            //console.log(valorProcessado)
+        }
+    </script>
+</body>
+</html>
