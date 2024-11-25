@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container-soma">
@@ -14,14 +15,6 @@
         <input type="button" value="Somar" onclick="somar()">
         <div id="retorno">Resultado</div>
     </div>
-    <script>
-        function somar(){
-        let numero_A=document.getElementById("numero_A").value
-        let numero_B=document.getElementById("numero_B").value
-        let soma=parseFloat(numero_A) + parseFloat(numero_B);
-        let retorno=document.getElementById("retorno");
-            retorno.innerHTML="O resultado da soma é "+ soma;
-                        }   
-    </script>
+    <script src="script.js"></script>    
 </body>
 </html>
