@@ -9,8 +9,8 @@
 <body>
     <p>Cálculo da média de ganhos mensais</p>
 
-    <p>Valor bruto dos lucros obtido no período de um ano <input type="number" id="ganhoBruto"></p>
-    <p>Valor total das despesas no período do mesmo ano <input type="number" id="despesaTotal"></p>
+    <p>Valor bruto dos lucros obtido no período de um ano <input type="text" oninput="this.value=this.value.replace(/[^0-9]/g, '')" id="ganhoBruto"></p>
+    <p>Valor total das despesas no período do mesmo ano <input type="text" oninput="this.value=this.value.replace(/[^0-9]/g, '')" id="despesaTotal"></p>
     <button onclick="mediaDeGanhosMensais()">Calcular</button>
     <div id="retorno"></div>
     
@@ -21,7 +21,7 @@
             let valorProcessado = (parseFloat(ganhoBruto)-parseFloat(despesaTotal))/12;
             let textoDeRetorno =document.getElementById("retorno");
             textoDeRetorno.innerHTML="Sua empresa lucrou r$ "+valorProcessado+" por mês em média"
-            //console.log(valorProcessado)
+            
         }
     </script>
 </body>
